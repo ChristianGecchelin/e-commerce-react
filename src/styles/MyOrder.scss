@@ -1,0 +1,59 @@
+@use "vars";
+
+.MyOrder-container {
+  width: 360px;
+  padding: 24px;
+  box-sizing: border-box;
+  position: absolute;
+  right: 0;
+}
+.MyOrder-container .title-container {
+  display: flex;
+}
+.MyOrder-container .title-container img {
+  transform: rotate(180deg);
+  margin-right: 14px;
+}
+.MyOrder-container .title-container .title {
+  font-size: var(--lg);
+  font-weight: bold;
+}
+.MyOrder-container .my-order-content .order {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 16px;
+  align-items: center;
+  background-color: var(--text-input-field);
+  margin-bottom: 24px;
+  border-radius: 8px;
+  padding: 0 24px;
+}
+.MyOrder-container .my-order-content .order p:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+}
+.MyOrder-container .my-order-content .order p span:nth-child(1) {
+  font-size: var(--md);
+  font-weight: bold;
+}
+.MyOrder-container .my-order-content .order p:nth-child(2) {
+  text-align: end;
+  font-weight: bold;
+}
+
+.MyOrder-container .my-order-content .primary-button {
+  background-color: var(--hospital-green);
+  border-radius: 8px;
+  border: none;
+  color: var(--white);
+  width: 100%;
+  cursor: pointer;
+  font-size: var(--md);
+  font-weight: bold;
+  height: 50px;
+}
+@media (max-width: 640px) {
+  .MyOrder-container {
+    width: 100%;
+  }
+}

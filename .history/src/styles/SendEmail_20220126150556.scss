@@ -1,0 +1,72 @@
+@use "vars";
+
+.SendEmail-container {
+  width: 320px;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.SendEmail-container .logo-image {
+  width: 150px;
+  margin-bottom: 48px;
+  justify-self: center;
+  display: none;
+  margin: 0 auto;
+}
+
+.SendEmail-container .title-text {
+  font-size: var(--lg);
+  text-align: center;
+  line-height: 2.2rem;
+}
+.SendEmail-container .subtitle-text {
+  color: var(--very-light-pink);
+  font-size: var(--md);
+  font-weight: 300;
+  line-height: 2rem;
+  text-align: center;
+}
+.SendEmail-container .email-image {
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  background-color: var(--text-input-field);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.SendEmail-container .email-image img {
+  width: 80px;
+}
+.SendEmail-container .resend-text-container {
+  font-size: var(--sm);
+}
+.SendEmail-container .resend-text-container span {
+  color: var(--very-light-pink);
+}
+.SendEmail-container .resend-text-container a {
+  color: var(--hospital-green);
+  text-decoration: none;
+  padding-left: 5px;
+}
+.SendEmail-container .primary-button {
+  background-color: var(--hospital-green);
+  border-radius: 8px;
+  border: none;
+  color: var(--white);
+  width: 100%;
+  cursor: pointer;
+  font-size: var(--md);
+  font-weight: bold;
+  height: 50px;
+}
+@media (max-width: 640px) {
+  .logo-image {
+    display: block;
+  }
+}

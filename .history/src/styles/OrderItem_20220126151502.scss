@@ -1,0 +1,26 @@
+@use "vars";
+
+.OrderItem-container {
+  display: flex;
+  width: 100%;
+  gap: 16px;
+  margin-bottom: 24px;
+  justify-content: center;
+  align-items: center;
+}
+.OrderItem-container figure {
+  margin: 0;
+}
+.OrderItem-container figure img {
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.OrderItem-container p:nth-child(2) {
+  color: var(--very-light-pink);
+}
+.OrderItem-container p:nth-child(3) {
+  font-size: var(--md);
+  font-weight: bold;
+}

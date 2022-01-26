@@ -1,0 +1,44 @@
+@use "vars";
+
+.Checkout-container {
+  width: 320px;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 40px;
+}
+.Checkout-container .title {
+  font-size: var(--lg);
+}
+
+.Checkout-container .Checkout-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.Checkout-container .Checkout-content .order-container {
+  width: 100%;
+  align-items: center;
+  background-color: var(--text-input-field);
+  border-radius: 8px;
+  padding: 0 24px;
+}
+.Checkout-container .Checkout-content .order-container p:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+}
+.Checkout-container .Checkout-content .order-container p span:nth-child(1) {
+  font-size: var(--md);
+  font-weight: bold;
+}
+.Checkout-container .Checkout-content .order-container p span:nth-child(2) {
+  font-size: var(--sm);
+  color: var(--very-light-pink);
+}
+.Checkout-container .Checkout-content .order-container p:nth-child(2) {
+  text-align: end;
+  font-weight: bold;
+}

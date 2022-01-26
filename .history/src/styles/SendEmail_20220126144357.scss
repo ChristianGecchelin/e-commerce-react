@@ -1,0 +1,72 @@
+@use "vars";
+
+.SendEmail-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.SendEmail-container .form-container .logo-image {
+  width: 150px;
+  margin-bottom: 48px;
+  justify-self: center;
+  display: none;
+}
+.SendEmail-container .form-container .title-text {
+  font-size: var(--lg);
+  margin-bottom: 12px;
+  text-align: center;
+}
+.SendEmail-container .form-container .subtitle-text {
+  color: var(--very-light-pink);
+  font-size: var(--md);
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 32px;
+  text-align: center;
+}
+.SendEmail-container .form-container .email-image {
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  background-color: var(--text-input-field);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.SendEmail-container .form-container .email-image img {
+  width: 80px;
+}
+.SendEmail-container .form-container .resend-text-container {
+  font-size: var(--sm);
+}
+.SendEmail-container .form-container .resend-text-container span {
+  color: var(--very-light-pink);
+}
+.SendEmail-container .form-container .resend-text-container a {
+  color: var(--hospital-green);
+  text-decoration: none;
+}
+.SendEmail-container .form-container .primary-button {
+  background-color: var(--hospital-green);
+  border-radius: 8px;
+  border: none;
+  color: var(--white);
+  width: 100%;
+  cursor: pointer;
+  font-size: var(--md);
+  font-weight: bold;
+  height: 50px;
+}
+.SendEmail-container .form-container .login-button {
+  margin-top: 14px;
+  margin-bottom: 30px;
+}
+@media (max-width: 640px) {
+  .logo-image {
+    display: block;
+  }
+}
