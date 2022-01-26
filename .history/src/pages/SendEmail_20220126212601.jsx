@@ -11,7 +11,7 @@ const SendEmail = () => {
         Please check your inbox for instructions on how to reset the password
       </p>
       <div className="email-image">
-        <img src={email} alt="email" />
+        <img src="./icons/email.svg" alt="email" />
       </div>
       <button className="primary-button login-button">Login</button>
       <p className="resend-text-container">

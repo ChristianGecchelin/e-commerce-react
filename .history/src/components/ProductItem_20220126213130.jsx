@@ -14,7 +14,7 @@ const ProductItem = () => {
           <p>Bike</p>
         </div>
         <figure>
-          <img src={addCart} alt="cart" />
+          <img src={addCart} alt="" />
         </figure>
       </div>
     </div>

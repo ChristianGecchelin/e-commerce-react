@@ -1,7 +1,7 @@
 import React from "react";
 import ProductInfo from "../components/ProductInfo";
 import "../styles/ProductDetail.scss";
-import iconClose from "@icons/icon_close.svg";
+import iconClose from "@icons/icon_close.png";
 const ProductDetail = () => {
   return (
     <aside className="ProductDetail-container">

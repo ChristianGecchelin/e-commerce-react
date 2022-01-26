@@ -4,7 +4,7 @@ import yardSale from "@logos/logo_yard_sale.svg";
 const PasswordRecovery = () => {
   return (
     <section className="PasswordRecovery-container">
-      <img src={yardSale} alt="logo" className="logo-image" />
+      <img src="./logos/logo_yard_sale.svg" alt="logo" className="logo-image" />
       <h1 className="title-text">Password recovery</h1>
       <p className="subtitle-text">
         Inform the email address used to create your account

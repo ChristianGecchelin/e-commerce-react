@@ -10,7 +10,7 @@ const Order = () => {
         <span>6 articles</span>
       </p>
       <p>$560.00</p>
-      <img src={arrow} alt="arrow" />
+      <img src="./icons/flechita.svg" alt="arrow" />
     </div>
   );
 };
